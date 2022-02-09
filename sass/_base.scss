@@ -1,0 +1,62 @@
+// colors
+$color-blue:#0278E5;
+$color-gray:#FAF8F7;
+$color-black:#1D1700;
+
+$color-gray-dark-1:#FAF8F7;
+$color-gray-dark-2:#E3E4E5;
+$color-blue-dark:#025DE5;
+
+$box-shadow-1 :0px 3px 6px rgba(29, 23, 0, 0.1);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+
+}
+
+/* icons */
+button.btn--ic {
+  position: relative;
+
+  background-color:$color-gray;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  display: flex;
+          justify-content: center;
+          align-items: center;
+  border: none;
+  margin-left: 20px; 
+}
+/*buttons */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+button.btn--call {
+  width: 183px;
+  height: 40px;
+  background: $color-gray;
+  box-shadow:$box-shadow-1;
+  border-radius: 39px;
+  border: none;
+  outline: none;
+}
